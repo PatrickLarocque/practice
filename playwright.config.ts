@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   webServer: {
-    command: 'npm run serve:e2e',
+    command: 'npm run start',
     url: 'http://localhost:4200',
     reuseExistingServer: !process.env.CI,
     timeout: 120000
