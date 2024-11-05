@@ -10,5 +10,10 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:4200',
   },
-  testDir: './tests'
+  testDir: './tests',
+  reporter: [
+    ['html'],
+    ['list']
+  ],
+  retries: process.env.CI ? 1 : 0,
 });
