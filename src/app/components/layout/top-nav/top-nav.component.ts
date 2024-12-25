@@ -6,16 +6,15 @@ import {NgOptimizedImage} from '@angular/common';
 import {MatPrefix} from '@angular/material/form-field';
 
 @Component({
-  selector: 'app-top-nav',
-  standalone: true,
-  imports: [
-    LangSwitcherComponent,
-    MatToolbar,
-    ThemeSwitcherComponent,
-    NgOptimizedImage,
-    MatPrefix
-  ],
-  template: `
+    selector: 'app-top-nav',
+    imports: [
+        LangSwitcherComponent,
+        MatToolbar,
+        ThemeSwitcherComponent,
+        NgOptimizedImage,
+        MatPrefix
+    ],
+    template: `
     <mat-toolbar class="toolbar">
       <img ngSrc='images/intact-financial.png'
            alt="logo"
@@ -29,7 +28,7 @@ import {MatPrefix} from '@angular/material/form-field';
       <app-theme-switcher/>
     </mat-toolbar>
   `,
-  styles: `
+    styles: `
     .toolbar {
       box-shadow: var(--mdc-elevated-card-container-elevation, var(--mat-app-level1));
       margin-bottom: 20px;

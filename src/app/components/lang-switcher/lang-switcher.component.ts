@@ -4,15 +4,14 @@ import {MatButton, MatIconButton} from '@angular/material/button';
 import {NgOptimizedImage} from '@angular/common';
 
 @Component({
-  selector: 'app-lang-switcher',
-  standalone: true,
-  imports: [
-    MatIcon,
-    MatIconButton,
-    NgOptimizedImage,
-    MatButton
-  ],
-  template: `
+    selector: 'app-lang-switcher',
+    imports: [
+        MatIcon,
+        MatIconButton,
+        NgOptimizedImage,
+        MatButton
+    ],
+    template: `
     <button mat-icon-button (click)="toggleLanguage()">
       <img [ngSrc]="lang() === 'en' ? 'images/united-kingdom.png' : 'images/france.png'"
            [alt]="lang() === 'en' ? 'english' : 'french'"
@@ -20,7 +19,7 @@ import {NgOptimizedImage} from '@angular/common';
            width="128"/>
     </button>
   `,
-  styles: ``
+    styles: ``
 })
 export class LangSwitcherComponent {
   lang = signal<string>('en');

@@ -7,10 +7,9 @@ import {LangSwitcherComponent} from './components/lang-switcher/lang-switcher.co
 import {TopNavComponent} from './components/layout/top-nav/top-nav.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [ThemeSwitcherComponent, MatToolbarModule, MatCard, MatCardContent, MatButton, LangSwitcherComponent, TopNavComponent],
-  template: `
+    selector: 'app-root',
+    imports: [ThemeSwitcherComponent, MatToolbarModule, MatCard, MatCardContent, MatButton, LangSwitcherComponent, TopNavComponent],
+    template: `
     <app-top-nav />
     <mat-card>
       <mat-card-content>
