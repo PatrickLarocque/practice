@@ -6,7 +6,7 @@ import { Injectable, signal, effect } from '@angular/core';
 export class ThemeService {
   darkMode = signal(false);
 
-  setDarkMode = effect(() => {
+  _ = effect(() => {
     document.documentElement.classList.toggle('dark', this.darkMode());
   })
 

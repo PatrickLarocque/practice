@@ -1,15 +1,12 @@
 import {Component, signal} from '@angular/core';
-import {MatIcon} from '@angular/material/icon';
-import {MatButton, MatIconButton} from '@angular/material/button';
+import {MatIconButton} from '@angular/material/button';
 import {NgOptimizedImage} from '@angular/common';
 
 @Component({
     selector: 'app-lang-switcher',
     imports: [
-        MatIcon,
         MatIconButton,
         NgOptimizedImage,
-        MatButton
     ],
     template: `
     <button mat-icon-button (click)="toggleLanguage()">

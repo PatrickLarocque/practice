@@ -3,7 +3,6 @@ import {LangSwitcherComponent} from '../../lang-switcher/lang-switcher.component
 import {MatToolbar} from '@angular/material/toolbar';
 import {ThemeSwitcherComponent} from '../../themeswitcher/themeswitcher.component';
 import {NgOptimizedImage} from '@angular/common';
-import {MatPrefix} from '@angular/material/form-field';
 
 @Component({
     selector: 'app-top-nav',
@@ -12,7 +11,6 @@ import {MatPrefix} from '@angular/material/form-field';
         MatToolbar,
         ThemeSwitcherComponent,
         NgOptimizedImage,
-        MatPrefix
     ],
     template: `
     <mat-toolbar class="toolbar">
